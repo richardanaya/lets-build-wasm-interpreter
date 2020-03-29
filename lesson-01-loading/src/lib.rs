@@ -6,6 +6,7 @@ fn malloc(size: usize) -> *mut u8 {
     ptr
 }
 #[no_mangle]
-fn run(ptr: usize, len: usize) -> usize {
-    42
+fn run(ptr: *mut u8, len: usize) -> f64 {
+    let rebuilt = unsafe { Vec::from_raw_parts(ptr, len, len) };
+    rebuilt.len() as f64
 }
