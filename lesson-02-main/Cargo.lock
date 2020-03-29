@@ -91,9 +91,9 @@ checksum = "826e7639553986605ec5979c7dd957c7895e93eabed50ab2ffa7f6128a75097c"
 
 [[package]]
 name = "watson"
-version = "0.0.9"
+version = "0.0.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3518cbb26c6f3c5091e03979d96cb2845abb2b1049057e479de4177b93681bf2"
+checksum = "1b99b20f5d66eb8ff80a95a93e105fb486fa2d127893db77d80feed3e1fcb389"
 dependencies = [
  "webassembly",
 ]

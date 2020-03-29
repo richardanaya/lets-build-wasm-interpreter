@@ -23,7 +23,7 @@ fn log(msg: &str) {
 }
 
 fn load_and_run_main(wasm_bytes: &[u8]) -> Result<f64, String> {
-    let program = Program::load(&wasm_bytes)?;
+    let program = Program::parse(&wasm_bytes)?;
     let main_function = program.find_exported_function("main")?;
     let main_code = program.find_code_block(main_function.index)?;
     if main_code.code[0] == I32_CONST {

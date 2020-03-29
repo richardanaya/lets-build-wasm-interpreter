@@ -15,5 +15,5 @@ lto = true
 [dependencies]
 malloc = "0.0.4"
 executor = "0.7.0"
-watson = "0.0.9"
+watson = "0.0.10"
 webassembly = "0.3.1"
