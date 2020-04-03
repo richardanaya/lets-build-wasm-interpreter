@@ -50,9 +50,9 @@ checksum = "1524cb91ce83a639960fec70266ebb48ee9c2f690721b844491e8cab12335d28"
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.9"
+version = "1.0.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6c09721c6781493a2a492a96b5a5bf19b65917fe6728884e7c44dd0c60ca3435"
+checksum = "df246d292ff63439fea9bc8c0a270bed0e390d5ebd4db4ba15aba81111b5abe3"
 dependencies = [
  "unicode-xid",
 ]
@@ -91,18 +91,18 @@ checksum = "826e7639553986605ec5979c7dd957c7895e93eabed50ab2ffa7f6128a75097c"
 
 [[package]]
 name = "watson"
-version = "0.0.10"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1b99b20f5d66eb8ff80a95a93e105fb486fa2d127893db77d80feed3e1fcb389"
+checksum = "0fc02692668a36ae10f41aed94e317dfeaba54eafd994527d78aa4a8d0bccea9"
 dependencies = [
  "webassembly",
 ]
 
 [[package]]
 name = "webassembly"
-version = "0.3.1"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "008b60f4fcb6b965a3377cec357584a232d4b2bb4f42c52dc80c799c627ee688"
+checksum = "1d1a10e1dedffff9cfcbdd33c289c65b87da634259a460a3f23d513649fa7a8c"
 
 [[package]]
 name = "woke"

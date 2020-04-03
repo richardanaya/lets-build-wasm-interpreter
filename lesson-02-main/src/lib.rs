@@ -2,7 +2,6 @@ extern crate alloc;
 use crate::alloc::string::ToString;
 use alloc::vec::Vec;
 use watson::*;
-use webassembly::*;
 
 #[no_mangle]
 fn malloc(size: usize) -> *mut u8 {
@@ -26,8 +25,7 @@ fn load_and_run_main(wasm_bytes: &[u8]) -> Result<f64, String> {
     let program = Program::parse(&wasm_bytes)?;
     let main_function = program.find_exported_function("main")?;
     let main_code = program.find_code_block(main_function.index)?;
-    if main_code.code[0] == I32_CONST {
-        let (num, _) = main_code.code.try_extract_i32(1)?;
+    if let Instruction::I32Const(num) = main_code.code_expression[0] {
         Ok(num as f64)
     } else {
         Err("Interpreter can't do anything else yet.".to_string())
