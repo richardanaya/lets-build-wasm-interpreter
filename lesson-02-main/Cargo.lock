@@ -5,7 +5,6 @@ name = "lesson"
 version = "0.0.1"
 dependencies = [
  "watson",
- "webassembly",
 ]
 
 [[package]]
