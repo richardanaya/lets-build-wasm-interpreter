@@ -13,4 +13,5 @@ crate-type = ["cdylib"]
 lto = true
 
 [dependencies]
-watson = "0.3.0"
+watson = {path="../../watson", version="0.8.0"}
+wee_alloc = "0.4.5"
